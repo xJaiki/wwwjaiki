@@ -1,0 +1,183 @@
+/* Stili per il layout mobile con navbar "fuoriuscenti" e drag in tempo reale */
+
+:root {
+    --primary-color: #ff6b6b;
+    --text-color: #333;
+  }
+  
+  /* Container principale dell'app mobile */
+  .mobile-app-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    touch-action: pan-y;
+    background-color: #fff;
+  }
+  
+  /* Stili per l'header mobile */
+  .mobile-header {
+    padding: 16px 0;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Navbar principale */
+  .main-navbar-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .main-navbar-scroll {
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 0 16px;
+    width: max-content;
+    min-width: 100%;
+  }
+  
+  /* Effetto "fuoriuscente" per i container navbar */
+  .main-navbar-container::before,
+  .main-navbar-container::after,
+  .sub-navbar-container::before,
+  .sub-navbar-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 16px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .main-navbar-container::before,
+  .sub-navbar-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+  
+  .main-navbar-container::after,
+  .sub-navbar-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+  
+  /* Stili per i pulsanti della navbar principale */
+  .main-nav-item {
+    font-size: 1.2rem;
+    padding: 8px 0;
+    margin-right: 24px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: var(--text-color);
+    text-align: left;
+    min-width: max-content;
+  }
+  
+  .main-nav-item.home-link {
+    color: var(--primary-color);
+  }
+  
+  .main-nav-item.active {
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  /* Stili per la subnavbar */
+  .sub-navbar-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 12px;
+  }
+  
+  .sub-navbar-scroll {
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 0 16px;
+    width: max-content;
+    min-width: 100%;
+  }
+  
+  .sub-nav-item {
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 8px 0;
+    margin-right: 24px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: var(--text-color);
+    text-align: left;
+    min-width: max-content;
+  }
+  
+  .sub-nav-item.active {
+    color: var(--primary-color);
+  }
+  
+  /* Elementi fantasma per l'effetto di continuità */
+  .ghost-item {
+    width: 24px;
+    height: 1px;
+    opacity: 0;
+  }
+  
+  /* Stili per il contenuto principale */
+  .page-content {
+    height: calc(100vh - 140px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding: 16px;
+    will-change: transform;
+  }
+  
+  /* Indicatori di swipe a pallini */
+  .swipe-indicators {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    padding: 8px;
+  }
+  
+  .swipe-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .swipe-indicator.active {
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+    margin-top: -2px;
+  }
+  
+  /* Scroller per dare l'impressione di continuare oltre lo schermo */
+  .horizontal-scroll-hint {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, transparent, rgba(0,0,0,0.05), transparent);
+    opacity: 0.5;
+  }
+  
+  /* Animazione per mostrare il vincolo di drag quando si arriva agli estremi */
+  .edge-bounce {
+    animation: bounce 0.5s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
+  }
