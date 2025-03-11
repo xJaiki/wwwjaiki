@@ -5,7 +5,7 @@ const Home = () => {
         <div className="min-h-screen bg-gradient-to-b from-indigo-500 to-purple-600 text-white">
             <header className="py-8">
                 <nav className="container mx-auto flex justify-between items-center">
-                    <h1 className="text-3xl font-bold">FakeApp</h1>
+                    <h1 className="text-3xl font-light">FakeApp</h1>
                     <div>
                         <a href="/login" className="px-4 py-2 bg-indigo-700 hover:bg-indigo-800 rounded mr-2">
                             Login
@@ -29,13 +29,13 @@ const Home = () => {
             </section>
             <section className="container mx-auto py-16 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
+                    <h3 className="text-3xl font-light mb-4">Our Mission</h3>
                     <p className="text-lg">
                         To revolutionize digital experiences with innovative design and cutting-edge technology that empower users around the world.
                     </p>
                 </div>
                 <div>
-                    <h3 className="text-3xl font-bold mb-4">Features</h3>
+                    <h3 className="text-3xl font-light mb-4">Features</h3>
                     <ul className="list-disc list-inside text-lg space-y-2">
                         <li>Innovative design</li>
                         <li>User-friendly interface</li>
@@ -45,7 +45,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="container mx-auto py-16">
-                <h3 className="text-4xl font-bold text-center mb-8">Testimonials</h3>
+                <h3 className="text-4xl font-light text-center mb-8">Testimonials</h3>
                 <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                     <div className="bg-white text-gray-800 p-6 rounded shadow-md max-w-sm">
                         <p>"FakeApp transformed the way I connect with technology. Truly a game-changer!"</p>

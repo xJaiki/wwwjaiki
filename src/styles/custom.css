@@ -1,20 +1,140 @@
 /* Variabili personalizzate e stili che integrano Tailwind */
 :root {
-    --color-primary: #ff6b6b;
+  --color-primary: #ff6b6b;
+}
+
+.home-link {
+  color: var(--color-primary);
+}
+
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+/* src/styles/pages/welcome.css */
+
+.welcome-container {
+  position: relative;
+  margin-left: -24px; /* Pull to the left to reach viewport edge */
+  box-sizing: border-box;
+}
+
+.welcome-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--color-primary, #ff6b6b);
+}
+
+.welcome-content {
+  padding-left: 24px; /* Add padding to content to offset the negative margin */
+  max-width: 48rem; /* 3xl equivalent */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .welcome-content {
+    padding-left: 32px;
   }
-  
-  .home-link {
-    color: var(--color-primary);
+}
+
+/* Custom CSS for Collections Page */
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Hover effects for collection items */
+.tab-content .grid > div {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add a subtle pulsing animation for interactive elements */
+@keyframes subtle-pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  .border-primary {
-    border-color: var(--color-primary);
+  50% {
+    transform: scale(1.02);
   }
-  
-  .text-primary {
-    color: var(--color-primary);
+  100% {
+    transform: scale(1);
   }
-  
-  .bg-primary {
-    background-color: var(--color-primary);
+}
+
+.collections-page .bg-primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.collections-page .bg-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-100%);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
   }
+  20% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Custom style for Monster Energy cans */
+.collections-page [data-tab="monsters"] .grid > div:hover {
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+/* Custom scrollbar for the modal */
+.collections-page .modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.collections-page .modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.collections-page .modal-content::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .collections-page .grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
