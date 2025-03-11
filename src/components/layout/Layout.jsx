@@ -24,7 +24,7 @@ const Layout = () => {
                 </div>
             </header>
 
-            <main  style={{ paddingTop: `${navbarSize}px` }}>
+            <main className='mt-0 md:mt-4' style={{ paddingTop: `${navbarSize}px` }}>
                 <Outlet />
             </main>
         </div>

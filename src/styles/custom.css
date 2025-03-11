@@ -80,45 +80,6 @@
   }
 }
 
-.collections-page .bg-primary {
-  position: relative;
-  overflow: hidden;
-}
-
-.collections-page .bg-primary::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: translateX(-100%);
-  animation: shine 3s infinite;
-}
-
-@keyframes shine {
-  0% {
-    transform: translateX(-100%);
-  }
-  20% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-/* Custom style for Monster Energy cans */
-.collections-page [data-tab="monsters"] .grid > div:hover {
-  box-shadow: 0 0 0 2px var(--color-primary);
-}
-
 /* Custom scrollbar for the modal */
 .collections-page .modal-content::-webkit-scrollbar {
   width: 6px;
@@ -132,9 +93,3 @@
   background: var(--color-primary);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .collections-page .grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  }
-}

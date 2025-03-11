@@ -44,7 +44,7 @@ const SubNavbar = () => {
     );
   } else if (path.startsWith('/projects')) {
     return (
-      <nav className="mb-8">
+      <nav className="mb-0">
         <ul className="flex flex-nowrap whitespace-nowrap md:flex-wrap gap-4 md:gap-6 min-w-max">
           <li>
             <NavLink 
@@ -81,7 +81,7 @@ const SubNavbar = () => {
     );
   } else if (path.startsWith('/stuff')) {
     return (
-      <nav className="mb-8">
+      <nav className="mb-0">
         <ul className="flex flex-nowrap whitespace-nowrap md:flex-wrap gap-4 md:gap-6 min-w-max">
           <li>
             <NavLink 
@@ -118,7 +118,7 @@ const SubNavbar = () => {
     );
   } else if (path.startsWith('/social')) {
     return (
-      <nav className="mb-8">
+      <nav className="mb-0">
         <ul className="flex flex-nowrap whitespace-nowrap md:flex-wrap gap-4 md:gap-6 min-w-max">
           <li>
             <NavLink 

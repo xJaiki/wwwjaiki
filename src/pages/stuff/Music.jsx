@@ -52,29 +52,59 @@ const Music = () => {
   // Music data
   const playlists = [
     {
-      name: "Gaming Session Mix",
-      description: "Perfect for intense gaming sessions and rage quitting in style",
-      embedUrl: "https://open.spotify.com/embed/playlist/37i9dQZF1DWWxPM4nWdhyI?utm_source=generator",
-      color: "#1DB954" // Spotify green
+      name: "Phylla",
+      description: "For when your brain needs to dissolve into sonic oblivion",
+      embedUrl: "https://open.spotify.com/embed/playlist/6N8d8TukwqCj2Wv6KU0agZ?utm_source=generator",
+      color: "#7B68EE" // Medium purple for that psychedelic edge
     },
     {
-      name: "Retro Gaming Soundtracks",
-      description: "Nostalgia in audio form - all the classics from my favorite games",
-      embedUrl: "https://open.spotify.com/embed/playlist/37i9dQZF1DXdLEN7aqioXM?utm_source=generator",
-      color: "#e91e63" // Pink
+      name: "Zune 30",
+      description: "Soundtrack to your childhood trauma disguised as gaming nostalgia",
+      embedUrl: "https://open.spotify.com/embed/playlist/3pAyJRk0Isdn5UUp7EZyQr?utm_source=generator",
+      color: "#FF4500" // Burnt orange like your dreams
     },
     {
-      name: "Coding Focus",
-      description: "When I need to focus and write code without losing my mind",
-      embedUrl: "https://open.spotify.com/embed/playlist/37i9dQZF1DX5trt9i14X7j?utm_source=generator",
-      color: "#2196f3" // Blue
+      name: "Millennium Edition",
+      description: "For coding until your eyes bleed and your fingers go numb",
+      embedUrl: "https://open.spotify.com/embed/playlist/4o25KNg4YILk0Oh45BadN6?utm_source=generator",
+      color: "#4682B4" // Steel blue like the cold void of your screen
     },
     {
-      name: "Energy Boost",
-      description: "For when even Monster Energy isn't enough",
-      embedUrl: "https://open.spotify.com/embed/playlist/37i9dQZF1DX4eRPd9frC1m?utm_source=generator", 
-      color: "#ff9800" // Orange
-    }
+      name: "speed.exe",
+      description: "When caffeine fails and sleep is for the weak",
+      embedUrl: "https://open.spotify.com/embed/playlist/1buboCwFPSFS5e3MylXpaf?utm_source=generator",
+      color: "#32CD32" // Toxic green for your poisoned productivity
+    },
+    {
+      name: "\"House Party\"",
+      description: "For pretending to be social while silently judging everyone",
+      embedUrl: "https://open.spotify.com/embed/playlist/5fqkQ3DzVkLF4ROXLXj2Wj?utm_source=generator",
+      color: "#DA70D6" // Orchid purple for fake smiles and inner darkness
+    },
+    {
+      name: "Metal (API)",
+      description: "Breaking systems and eardrums with technical precision",
+      embedUrl: "https://open.spotify.com/embed/playlist/0Jr0txNaW8RZwhPmJGztl1?utm_source=generator",
+      color: "#708090" // Slate gray like the soul of your machine
+    },
+    {
+      name: "moricons.dll",
+      description: "Digital artifacts from when the internet was still dangerous",
+      embedUrl: "https://open.spotify.com/embed/playlist/18DRYlllqslRTvhrbZERd5?utm_source=generator",
+      color: "#20B2AA" // Retro teal that screams 'I was online before it was cool'
+    },
+    {
+      name: "ISDone.dll",
+      description: "Sounds for when you've given up but still need to deliver",
+      embedUrl: "https://open.spotify.com/embed/playlist/3KX7QcOdfhyjwjElz6Fihy?utm_source=generator",
+      color: "#B8860B" // Dark gold like your fading ambitions
+    },
+    {
+      name: "Hetalia",
+      description: "Cultural appropriation in audio form - no regrets",
+      embedUrl: "https://open.spotify.com/embed/playlist/6LedQHNqctSZkQcCfSE2rq?utm_source=generator",
+      color: "#CD5C5C" // Indie red for your alternative personality
+    },
   ];
 
   const genres = [
@@ -90,37 +120,47 @@ const Music = () => {
   ];
 
   const artists = [
-    { 
-      name: "Daft Punk", 
-      image: "https://i.imgur.com/JaUMTsA.jpg", 
-      desc: "French electronic music duo formed in 1993. Their music makes coding at 3 AM feel like a cinematic experience."
+    {
+      name: "Gorillaz",
+      image: "",
     },
-    { 
-      name: "Tame Impala", 
-      image: "https://i.imgur.com/8gBeWbS.jpg", 
-      desc: "Australian music project by Kevin Parker. Perfect soundtrack for pretending I'm cooler than I actually am."
+    {
+      name: "Kanye West",
+      image: "",
     },
-    { 
-      name: "Radiohead", 
-      image: "https://i.imgur.com/lQ7a9HD.jpg", 
-      desc: "English rock band formed in 1985. For when I'm feeling existential about why my code won't compile."
+    {
+      name: "Childish Gambino",
+      image: "",
     },
-    { 
-      name: "Carpenter Brut", 
-      image: "https://i.imgur.com/5jJVwFo.jpg", 
-      desc: "French synthwave artist. Makes me feel like I'm in an 80s action movie while I take out the trash."
+    {
+      name: "Kendrick Lamar",
+      image: "",
     },
-    { 
-      name: "Kendrick Lamar", 
-      image: "https://i.imgur.com/Rb7ca2D.jpg", 
-      desc: "American rapper and songwriter. His lyrics are deeper than the nested if statements in my code."
+    {
+      name: "Metronomy",
+      image: "",
+    },
+    {
+      name: "Calcutta",
+      image: "",
+    },
+    {
+      name: "ScHoolboy Q",
+      image: "",
+    },
+    {
+      name: "Led Zeppelin",
+      image: "",
+    },
+    {
+      name: "Red Hot Chili Peppers",
+      image: "",
     }
   ];
 
   // Tabs config
   const tabs = [
     { id: 'playlists', label: 'Playlists', icon: <Disc /> },
-    { id: 'genres', label: 'Genres', icon: <Radio /> },
     { id: 'artists', label: 'Artists', icon: <User /> }
   ];
 
@@ -132,6 +172,12 @@ const Music = () => {
       variants={containerVariants}
       ref={pageRef}
     >
+      <motion.h1
+        className="text-6xl font-light text-primary mb-6 flex items-center gap-3"
+        variants={itemVariants}
+      >
+        Music
+      </motion.h1>
       <div className="relative mb-8">
         {/* Red bar */}
         <div
@@ -141,20 +187,15 @@ const Music = () => {
           }}
         />
 
-        <div className="pl-8">
-          <motion.h1
-            className="text-6xl font-light text-primary mb-6 flex items-center gap-3"
-            variants={itemVariants}
-          >
-            Music <MusicIcon className="h-10 w-10" />
-          </motion.h1>
+        <div className="pl-0">
+
 
           <motion.p variants={itemVariants} className="text-xl font-light mb-8">
             My soundtrack for coding, gaming, and pretending I have good taste.
           </motion.p>
 
           {/* Now Playing - Spotify Status */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="bg-white border-l-4 border-[#1DB954] p-4 mb-8 flex items-center gap-3"
           >
@@ -171,11 +212,10 @@ const Music = () => {
               {tabs.map(tab => (
                 <button
                   key={tab.id}
-                  className={`px-6 py-3 mr-2 flex items-center gap-2 transition-colors whitespace-nowrap ${
-                    activeTab === tab.id 
-                      ? 'bg-primary text-white font-medium' 
-                      : 'bg-white border-2 border-gray-200 hover:border-primary'
-                  }`}
+                  className={`px-6 py-3 mr-2 flex items-center gap-2 transition-colors whitespace-nowrap ${activeTab === tab.id
+                    ? 'bg-primary text-white font-medium'
+                    : 'bg-white border-2 border-gray-200 hover:border-primary'
+                    }`}
                   onClick={() => setActiveTab(tab.id)}
                 >
                   {tab.icon}
@@ -193,9 +233,9 @@ const Music = () => {
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-2xl font-medium">My Playlists</h2>
                   <p className="text-sm">
-                    <a 
-                      href="https://open.spotify.com/user/your-profile" 
-                      target="_blank" 
+                    <a
+                      href="https://open.spotify.com/user/1187721300?si=4854eaf3a38f43b3"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline flex items-center gap-1"
                     >
@@ -204,13 +244,13 @@ const Music = () => {
                     </a>
                   </p>
                 </div>
-                
+
                 <div className="space-y-8">
                   {playlists.map((playlist, index) => (
                     <div key={index} className="bg-white p-4 shadow-sm">
                       <div className="flex items-center gap-3 mb-4">
-                        <div 
-                          className="w-3 h-12" 
+                        <div
+                          className="w-3 h-12"
                           style={{ backgroundColor: playlist.color }}
                         ></div>
                         <div>
@@ -242,12 +282,12 @@ const Music = () => {
                   <h2 className="text-2xl font-medium">Genres I Listen To</h2>
                   <p className="text-lg">Total tracks: 1,391</p>
                 </div>
-                
+
                 <div className="bg-white p-4 border-l-4 border-primary mb-6">
                   <p className="font-medium mb-1">Music Taste Disclaimer</p>
                   <p className="text-sm">Yes, I know my music taste is all over the place. No, I will not apologize for it.</p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {genres.map((genre, index) => (
                     <motion.div
@@ -262,7 +302,7 @@ const Music = () => {
                       <div className="w-full bg-gray-200 h-4 rounded-sm overflow-hidden">
                         <div
                           className="h-4"
-                          style={{ 
+                          style={{
                             width: `${(genre.count / 500) * 100}%`,
                             backgroundColor: genre.color
                           }}
@@ -280,7 +320,7 @@ const Music = () => {
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-2xl font-medium">Favorite Artists</h2>
                 </div>
-                
+
                 <div className="space-y-6">
                   {artists.map((artist, index) => (
                     <motion.div
@@ -304,7 +344,7 @@ const Music = () => {
                     </motion.div>
                   ))}
                 </div>
-                
+
                 <div className="mt-8 text-center">
                   <p className="text-sm text-gray-500 italic">
                     Stats based on my last 6 months of listening. Yes, I'm aware this makes me look like a hipster.

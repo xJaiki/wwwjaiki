@@ -12,57 +12,57 @@ const CollectionsPage = () => {
 
   // Data for all collections
   const monsterData = [
-    {name: "Ultra Fiesta", country: "Italy", image: "https://i.imgur.com/eVO1AVl.jpg"},
-    {name: "Ultra Blue", country: "Poland", image: "https://i.imgur.com/6vysZX2.jpg"},
-    {name: "Ultra Violet", country: "Poland", image: "https://i.imgur.com/tPS76Rr.jpg"},
-    {name: "Mixxd", country: "Spain", image: "https://i.imgur.com/nYNvXUS.jpg"},
-    {name: "Ultra Pipeline", country: "Italy", image: "https://i.imgur.com/0TkqM7i.jpg"},
-    {name: "Ultra Paradise", country: "Italy", image: "https://i.imgur.com/YfNoIWY.jpg"},
-    {name: "Ultra Fiesta", country: "Poland", image: "https://i.imgur.com/uWhFUwl.jpg"},
-    {name: "Ultra Citron", country: "Italy", image: "https://i.imgur.com/qPqZGdI.jpg"},
-    {name: "Ripper", country: "Poland", image: "https://i.imgur.com/FuwqzRV.jpg"},
-    {name: "Pacific", country: "U.S.A.", image: "https://i.imgur.com/9vSoiqe.jpg"},
-    {name: "Pacific", country: "Italy", image: "https://i.imgur.com/8BQRDlM.jpg"},
-    {name: "Ultra Red", country: "Italy", image: "https://i.imgur.com/Jocyplr.jpg"},
-    {name: "Ultra White", country: "Russia", image: "https://i.imgur.com/mCMhPnA.jpg"},
-    {name: "Mean Bean", country: "U.S.A.", image: "https://i.imgur.com/Cd5xNLu.jpg"},
-    {name: "Loca Moca", country: "U.S.A.", image: "https://i.imgur.com/tGZFXFm.jpg"},
-    {name: "Pacific", country: "Poland", image: "https://i.imgur.com/EPgWtjB.jpg"},
-    {name: "Ultra Sunrise", country: "Russia", image: "https://i.imgur.com/bdVr2re.jpg"},
-    {name: "Mango Loco", country: "Poland", image: "https://i.imgur.com/rNpxgWE.jpg"},
-    {name: "Ultra Fiesta", country: "Italy", image: "https://i.imgur.com/xYSamLx.jpg"},
-    {name: "Ultra White", country: "Italy", image: "https://i.imgur.com/Wto4aEc.jpg"},
-    {name: "Ultra Blue", country: "U.S.A.", image: "https://i.imgur.com/ZuUSZRv.jpg"},
-    {name: "Lewis Hamilton 3 ★", country: "Italy", image: "https://i.imgur.com/esdqZ8H.jpg"},
-    {name: "Mango Loco", country: "Italy", image: "https://i.imgur.com/9hl8a2d.jpg"},
-    {name: "Mixxd", country: "Poland", image: "https://i.imgur.com/L4jcAMJ.jpg"},
-    {name: "Ultra Watermelon", country: "Italy", image: "https://i.imgur.com/R89noH4.jpg"},
-    {name: "The Doctor VR46", country: "Italy", image: "https://i.imgur.com/3CLfgXw.jpg"},
-    {name: "Dragon Tea White", country: "U.S.A.", image: "https://i.imgur.com/OYzOnFG.jpg"},
-    {name: "Absolutely Zero", country: "Italy", image: "https://i.imgur.com/ObQ2Qkz.jpg"},
-    {name: "Absolutely Zero", country: "Italy", image: "https://i.imgur.com/QH6n7uw.jpg"},
-    {name: "Monarch", country: "Poland", image: "https://i.imgur.com/EKO3F6G.jpg"},
-    {name: "Ultra Black", country: "U.K.", image: "https://i.imgur.com/UW2Or1i.jpg"},
-    {name: "Assault", country: "Italy", image: "https://i.imgur.com/YFweEYp.jpg"},
-    {name: "Rehab Lemon", country: "Italy", image: "https://i.imgur.com/YFweEYp.jpg"},
-    {name: "Khaos", country: "Italy", image: "https://i.imgur.com/Dsm9Efm.jpg"},
-    {name: "Ripper", country: "Italy", image: "https://i.imgur.com/mWBRk1E.jpg"},
-    {name: "Mule", country: "Poland", image: "https://i.imgur.com/BmqEF8W.jpg"},
-    {name: "Irish Blend", country: "U.S.A.", image: "https://i.imgur.com/dw2bsvb.jpg"},
-    {name: "Classic", country: "Russia", image: "https://i.imgur.com/YrEY3Vn.jpg"},
-    {name: "Nitro", country: "Italy", image: "https://i.imgur.com/mQRDkkQ.jpg"},
-    {name: "Classic", country: "Poland", image: "https://i.imgur.com/xJnIZdP.jpg"},
-    {name: "Ultra Blue", country: "Greece", image: "https://i.imgur.com/EI2Hs0N.jpg"},
-    {name: "Absolutely Zero", country: "U.S.A.", image: "https://i.imgur.com/xthmg8I.jpg"},
-    {name: "Monarch", country: "Netherland", image: "https://i.imgur.com/C9qd3ew.jpg"},
-    {name: "Ultra Gold", country: "U.S.A.", image: "https://i.imgur.com/qrFsc5S.jpg"},
-    {name: "Nitro", country: "U.K.", image: "https://i.imgur.com/iyHEDTV.jpg"},
-    {name: "Ripper", country: "Italy", image: "https://i.imgur.com/WE37kkZ.jpg"},
-    {name: "COD: Infinity Warfare", country: "Italy", image: "https://i.imgur.com/9WgDODK.jpg"},
-    {name: "Apex Legend", country: "Italy", image: "https://i.imgur.com/zx1r41Z.jpg"},
-    {name: "COD: Black Ops 4", country: "Italy", image: "https://i.imgur.com/3dwLCqV.jpg"},
-    {name: "Halo Infinite", country: "Italy", image: "https://i.imgur.com/aqoRU6H.jpg"},
-    {name: "AC: Origins", country: "Italy", image: "https://i.imgur.com/s2vQOMg.jpg"}
+    { name: "Ultra Fiesta", country: "Italy", image: "https://i.imgur.com/eVO1AVl.jpg" },
+    { name: "Ultra Blue", country: "Poland", image: "https://i.imgur.com/6vysZX2.jpg" },
+    { name: "Ultra Violet", country: "Poland", image: "https://i.imgur.com/tPS76Rr.jpg" },
+    { name: "Mixxd", country: "Spain", image: "https://i.imgur.com/nYNvXUS.jpg" },
+    { name: "Ultra Pipeline", country: "Italy", image: "https://i.imgur.com/0TkqM7i.jpg" },
+    { name: "Ultra Paradise", country: "Italy", image: "https://i.imgur.com/YfNoIWY.jpg" },
+    { name: "Ultra Fiesta", country: "Poland", image: "https://i.imgur.com/uWhFUwl.jpg" },
+    { name: "Ultra Citron", country: "Italy", image: "https://i.imgur.com/qPqZGdI.jpg" },
+    { name: "Ripper", country: "Poland", image: "https://i.imgur.com/FuwqzRV.jpg" },
+    { name: "Pacific", country: "U.S.A.", image: "https://i.imgur.com/9vSoiqe.jpg" },
+    { name: "Pacific", country: "Italy", image: "https://i.imgur.com/8BQRDlM.jpg" },
+    { name: "Ultra Red", country: "Italy", image: "https://i.imgur.com/Jocyplr.jpg" },
+    { name: "Ultra White", country: "Russia", image: "https://i.imgur.com/mCMhPnA.jpg" },
+    { name: "Mean Bean", country: "U.S.A.", image: "https://i.imgur.com/Cd5xNLu.jpg" },
+    { name: "Loca Moca", country: "U.S.A.", image: "https://i.imgur.com/tGZFXFm.jpg" },
+    { name: "Pacific", country: "Poland", image: "https://i.imgur.com/EPgWtjB.jpg" },
+    { name: "Ultra Sunrise", country: "Russia", image: "https://i.imgur.com/bdVr2re.jpg" },
+    { name: "Mango Loco", country: "Poland", image: "https://i.imgur.com/rNpxgWE.jpg" },
+    { name: "Ultra Fiesta", country: "Italy", image: "https://i.imgur.com/xYSamLx.jpg" },
+    { name: "Ultra White", country: "Italy", image: "https://i.imgur.com/Wto4aEc.jpg" },
+    { name: "Ultra Blue", country: "U.S.A.", image: "https://i.imgur.com/ZuUSZRv.jpg" },
+    { name: "Lewis Hamilton 3 ★", country: "Italy", image: "https://i.imgur.com/esdqZ8H.jpg" },
+    { name: "Mango Loco", country: "Italy", image: "https://i.imgur.com/9hl8a2d.jpg" },
+    { name: "Mixxd", country: "Poland", image: "https://i.imgur.com/L4jcAMJ.jpg" },
+    { name: "Ultra Watermelon", country: "Italy", image: "https://i.imgur.com/R89noH4.jpg" },
+    { name: "The Doctor VR46", country: "Italy", image: "https://i.imgur.com/3CLfgXw.jpg" },
+    { name: "Dragon Tea White", country: "U.S.A.", image: "https://i.imgur.com/OYzOnFG.jpg" },
+    { name: "Absolutely Zero", country: "Italy", image: "https://i.imgur.com/ObQ2Qkz.jpg" },
+    { name: "Absolutely Zero", country: "Italy", image: "https://i.imgur.com/QH6n7uw.jpg" },
+    { name: "Monarch", country: "Poland", image: "https://i.imgur.com/EKO3F6G.jpg" },
+    { name: "Ultra Black", country: "U.K.", image: "https://i.imgur.com/UW2Or1i.jpg" },
+    { name: "Assault", country: "Italy", image: "https://i.imgur.com/YFweEYp.jpg" },
+    { name: "Rehab Lemon", country: "Italy", image: "https://i.imgur.com/YFweEYp.jpg" },
+    { name: "Khaos", country: "Italy", image: "https://i.imgur.com/Dsm9Efm.jpg" },
+    { name: "Ripper", country: "Italy", image: "https://i.imgur.com/mWBRk1E.jpg" },
+    { name: "Mule", country: "Poland", image: "https://i.imgur.com/BmqEF8W.jpg" },
+    { name: "Irish Blend", country: "U.S.A.", image: "https://i.imgur.com/dw2bsvb.jpg" },
+    { name: "Classic", country: "Russia", image: "https://i.imgur.com/YrEY3Vn.jpg" },
+    { name: "Nitro", country: "Italy", image: "https://i.imgur.com/mQRDkkQ.jpg" },
+    { name: "Classic", country: "Poland", image: "https://i.imgur.com/xJnIZdP.jpg" },
+    { name: "Ultra Blue", country: "Greece", image: "https://i.imgur.com/EI2Hs0N.jpg" },
+    { name: "Absolutely Zero", country: "U.S.A.", image: "https://i.imgur.com/xthmg8I.jpg" },
+    { name: "Monarch", country: "Netherland", image: "https://i.imgur.com/C9qd3ew.jpg" },
+    { name: "Ultra Gold", country: "U.S.A.", image: "https://i.imgur.com/qrFsc5S.jpg" },
+    { name: "Nitro", country: "U.K.", image: "https://i.imgur.com/iyHEDTV.jpg" },
+    { name: "Ripper", country: "Italy", image: "https://i.imgur.com/WE37kkZ.jpg" },
+    { name: "COD: Infinity Warfare", country: "Italy", image: "https://i.imgur.com/9WgDODK.jpg" },
+    { name: "Apex Legend", country: "Italy", image: "https://i.imgur.com/zx1r41Z.jpg" },
+    { name: "COD: Black Ops 4", country: "Italy", image: "https://i.imgur.com/3dwLCqV.jpg" },
+    { name: "Halo Infinite", country: "Italy", image: "https://i.imgur.com/aqoRU6H.jpg" },
+    { name: "AC: Origins", country: "Italy", image: "https://i.imgur.com/s2vQOMg.jpg" }
   ];
 
   const decksData = [
@@ -197,6 +197,23 @@ const CollectionsPage = () => {
     },
   ];
 
+  // Calculate the distance from left edge
+  useEffect(() => {
+    const calculateLeftPosition = () => {
+      if (pageRef.current) {
+        const rect = pageRef.current.getBoundingClientRect();
+        setLeftPosition(-rect.left);
+      }
+    };
+
+    calculateLeftPosition();
+    window.addEventListener('resize', calculateLeftPosition);
+
+    return () => {
+      window.removeEventListener('resize', calculateLeftPosition);
+    };
+  }, []);
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -243,8 +260,8 @@ const CollectionsPage = () => {
   const countries = ['All', ...new Set(monsterData.map(item => item.country))];
 
   // Filter monsters based on country
-  const filteredMonsters = filterCountry === 'All' 
-    ? monsterData 
+  const filteredMonsters = filterCountry === 'All'
+    ? monsterData
     : monsterData.filter(item => item.country === filterCountry);
 
   // Handle item click to show modal
@@ -268,23 +285,24 @@ const CollectionsPage = () => {
       animate="visible"
       variants={containerVariants}
       ref={pageRef}
+    ><motion.h1
+      className="text-6xl font-light text-primary mb-6"
+      variants={itemVariants}
     >
+        Collections
+      </motion.h1>
       <div className="relative mb-8">
         {/* Red bar */}
         <div
-          className="absolute top-0 bottom-0 w-1 md:w-2 bg-primary"
+          className=" top-0 bottom-0 w-1 md:w-2 bg-primary  "
           style={{
-            left: `${leftPosition}px`
+            left: `${leftPosition}px`,
+            position: 'absolute'
           }}
+
         />
 
-        <div className="pl-8">
-          <motion.h1
-            className="text-6xl font-light text-primary mb-6"
-            variants={itemVariants}
-          >
-            Collections
-          </motion.h1>
+        <div className="pl-0">
 
           <motion.p variants={itemVariants} className="text-xl font-light mb-8">
             A place to showcase all the useless stuff I spend my money on.
@@ -296,11 +314,10 @@ const CollectionsPage = () => {
               {tabs.map(tab => (
                 <button
                   key={tab.id}
-                  className={`px-6 py-3 mr-2 flex items-center gap-2 transition-colors whitespace-nowrap ${
-                    activeTab === tab.id 
-                      ? 'bg-primary text-white font-medium' 
+                  className={`px-6 py-3 mr-2 flex items-center gap-2 transition-colors whitespace-nowrap ${activeTab === tab.id
+                      ? 'bg-primary text-white font-medium'
                       : 'bg-white border-2 border-gray-200 hover:border-primary'
-                  }`}
+                    }`}
                   onClick={() => setActiveTab(tab.id)}
                 >
                   {tab.icon}
@@ -319,24 +336,23 @@ const CollectionsPage = () => {
                   <h2 className="text-2xl font-medium">Monster Energy Collection <span className="text-sm text-gray-500">- Last updated 2022 </span></h2>
                   <p className="text-lg">Total: {filteredMonsters.length} cans</p>
                 </div>
-                
+
                 {/* Country filter */}
                 <div className="mb-6 flex flex-wrap gap-2">
                   {countries.map(country => (
                     <button
                       key={country}
-                      className={`px-3 py-1 text-sm ${
-                        filterCountry === country
+                      className={`px-3 py-1 text-sm ${filterCountry === country
                           ? 'bg-primary text-white'
                           : 'bg-white border border-gray-200 hover:border-primary'
-                      }`}
+                        }`}
                       onClick={() => setFilterCountry(country)}
                     >
                       {country}
                     </button>
                   ))}
                 </div>
-                
+
                 {/* Heart rate warning banner */}
                 <div className="bg-white px-4 border-l-4 border-primary mb-6 flex items-center gap-3">
                   <Battery className="text-red-500 animate-pulse" />
@@ -345,7 +361,7 @@ const CollectionsPage = () => {
                     <p className="text-sm">My cardiologist strongly advises against viewing this collection. Proceed at your own risk.</p>
                   </div>
                 </div>
-                
+
                 {/* Monster grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                   {filteredMonsters.map((monster, index) => (
@@ -380,7 +396,7 @@ const CollectionsPage = () => {
                   <h2 className="text-2xl font-medium">KeyForge Deck Collection</h2>
                   <p className="text-lg">Total: {decksData.length} decks</p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {decksData.map((deck, index) => (
                     <motion.div
@@ -442,12 +458,12 @@ const CollectionsPage = () => {
                   <h2 className="text-2xl font-medium">Tech Gear <span className="text-sm text-gray-500">- Last updated 2022</span></h2>
                   <p className="text-lg">Total: {gearData.length} items</p>
                 </div>
-                
+
                 <div className="bg-white px-4 border-l-4 border-primary mb-6">
                   <p className="font-medium mb-1">Gear Disclaimer</p>
                   <p className="text-sm">I have not cleaned any of these items since purchase. They contain enough DNA samples to clone me.</p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {gearData.map((gear, index) => (
                     <motion.div
@@ -479,12 +495,12 @@ const CollectionsPage = () => {
                   <h2 className="text-2xl font-medium">Console Collection <span className="text-sm text-gray-500">- Last updated 2022</span></h2>
                   <p className="text-lg">Total: {consoleData.length} consoles</p>
                 </div>
-                
+
                 <div className="bg-white px-4 border-l-4 border-primary mb-6">
                   <p className="font-medium mb-1">Warning: Modding Addiction</p>
                   <p className="text-sm">If it has a CPU, I will find a way to soft mod it, because I'm not good with a soldering iron.</p>
                 </div>
-                
+
                 <div className="space-y-6">
                   {consoleData.map((console, index) => (
                     <motion.div
@@ -503,11 +519,10 @@ const CollectionsPage = () => {
                         <div className="w-full md:w-2/3 p-4">
                           <div className="flex justify-between items-center mb-2">
                             <h3 className="text-lg font-medium">{console.name}</h3>
-                            <span className={`px-2 py-1 text-xs ${
-                              console.status === 'modded' ? 'bg-green-100 text-green-800' :
-                              console.status === 'broken' ? 'bg-red-100 text-red-800' :
-                              'bg-blue-100 text-blue-800'
-                            }`}>
+                            <span className={`px-2 py-1 text-xs ${console.status === 'modded' ? 'bg-green-100 text-green-800' :
+                                console.status === 'broken' ? 'bg-red-100 text-red-800' :
+                                  'bg-blue-100 text-blue-800'
+                              }`}>
                               {console.status}
                             </span>
                           </div>
@@ -519,6 +534,7 @@ const CollectionsPage = () => {
                 </div>
               </motion.div>
             )}
+
           </div>
         </div>
       </div>
@@ -584,12 +600,11 @@ const CollectionsPage = () => {
                 {selectedItem.status && (
                   <div className="mt-2 w-full">
                     <p className="flex items-center gap-2">
-                      Status: 
-                      <span className={`px-2 py-1 text-xs ${
-                        selectedItem.status === 'modded' ? 'bg-green-100 text-green-800' :
-                        selectedItem.status === 'broken' ? 'bg-red-100 text-red-800' :
-                        'bg-blue-100 text-blue-800'
-                      }`}>
+                      Status:
+                      <span className={`px-2 py-1 text-xs ${selectedItem.status === 'modded' ? 'bg-green-100 text-green-800' :
+                          selectedItem.status === 'broken' ? 'bg-red-100 text-red-800' :
+                            'bg-blue-100 text-blue-800'
+                        }`}>
                         {selectedItem.status}
                       </span>
                     </p>

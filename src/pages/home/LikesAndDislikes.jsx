@@ -14,21 +14,22 @@ const LikesAndDislikes = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.15,
         delayChildren: 0.05
       }
     }
   };
 
   const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { y: 40, opacity: 0, rotate: -1 },
     visible: {
       y: 0,
       opacity: 1,
+      rotate: 0,
       transition: {
         type: "spring",
-        stiffness: 300,
-        damping: 20
+        stiffness: 200,
+        damping: 15
       }
     }
   };
@@ -85,7 +86,6 @@ const LikesAndDislikes = () => {
     { 
       id: 'chief', 
       title: 'Master Chief', 
-      icon: <Headphones />,
       description: 'The man, the myth, the legend. If I could have one fictional character as my wingman in real life, it\'d be John-117. Sorry all other video game protagonists.'
     },
     { 
@@ -156,9 +156,8 @@ const LikesAndDislikes = () => {
 
   const renderItems = (items, isLikes) => {
     return items.map((item) => (
-      <motion.div 
+      <div 
         key={item.id}
-        variants={itemVariants}
         className={`px-4 border-l-4 mb-3 bg-white relative transition-all duration-300 ${isLikes ? 'border-primary' : 'border-gray-500'}`}
         onMouseEnter={() => setHoverItem(item.id)}
         onMouseLeave={() => setHoverItem(null)}
@@ -190,7 +189,7 @@ const LikesAndDislikes = () => {
             )}
           </div>
         )}
-      </motion.div>
+      </div>
     ));
   };
 
@@ -218,7 +217,7 @@ const LikesAndDislikes = () => {
             variants={itemVariants}
           >
             <h1 className="text-6xl font-light text-primary mb-6 flex items-center gap-3">
-              Likes <Heart className="inline-block h-10 w-10" />
+              Likes
             </h1>
             
             <div className="likes-list">
@@ -231,7 +230,7 @@ const LikesAndDislikes = () => {
             variants={itemVariants}
           >
             <h1 className="text-6xl font-light text-gray-700 mb-6 flex items-center gap-3">
-              Dislikes <HeartCrack className="inline-block h-10 w-10" />
+              Dislikes
             </h1>
             
             <div className="dislikes-list">
