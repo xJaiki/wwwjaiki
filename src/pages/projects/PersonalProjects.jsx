@@ -10,111 +10,58 @@ const PersonalProjects = () => {
   // Professional projects data
   const workProjects = [
     {
-      id: 7,
-      title: "Advanced Production Line Management System",
-      description: "Updated an evolutionary system for managing a new production line through sophisticated file processing and real-time data visualization to streamline manufacturing operations.",
-      technologies: ["ASP.NET MVC", "C#", "MSSQL", "JavaScript", "Bootstrap"],
-      image: null,
-      details: [
-        "Engineered robust parsing algorithms to process and transform complex high-volume data files into actionable insights",
-        "Developed normalized database schema optimized for production line metrics and operational analytics",
-        "Implemented responsive user interface with real-time updates to monitor production line advancement",
-        "Created comprehensive data validation protocols ensuring manufacturing process integrity and quality control"
-      ]
-    },
-    {
-      id: 8,
-      title: "Comprehensive Marina Management Platform",
-      description: "Independently designed, developed, and deployed a full-featured marina reservation and management system with integrated payment processing, developed using Spring, MySQL, React, and Tailwind CSS.",
-      technologies: ["Spring Boot", "MySQL", "React", "Tailwind CSS", "PagoPA", "Debian"],
-      image: null,
-      details: [
-        "Orchestrated the entire software development lifecycle from requirements gathering to production deployment on Debian servers",
-        "Implemented secure company registration and complex reservation workflows with business rule validations",
-        "Integrated PagoPA payment gateway enabling seamless transaction processing for reservations",
-        "Engineered comprehensive vehicle and document management systems with secure document storage",
-        "Executed all aspects of the project autonomously, including system architecture, development, testing, and deployment"
-      ]
-    },
-    {
       id: 1,
-      title: "Enterprise Personnel Management System",
-      description: "Spearheaded the architecture and development of a comprehensive web application for personnel management, user profiles, and advanced cross-referencing analytics for executive reporting.",
-      technologies: ["C#", ".NET", "Angular", "Keycloak", "Docker", "MSSQL"],
-      image: "", // Can add image URL later if available
+      title: "Orderly - Sales Order Management System",
+      description: "Developed a comprehensive MVP solution in React designed to streamline and optimize the order creation workflow for sales agents, featuring a custom-built ORM for efficient data management and PDF export capabilities.",
+      technologies: ["React", "Node.js", "JavaScript", "ORM", "PDF Generation"],
+      image: null,
       details: [
-        "Engineered an intuitive user interface optimized for high-volume personnel data management",
-        "Implemented enterprise-grade authentication protocols leveraging Keycloak for seamless SSO integration",
-        "Architected sophisticated reporting frameworks enabling data-driven decision making for leadership",
-        "Orchestrated containerization strategy using Docker to ensure consistent deployment across environments"
+        "Engineered intuitive user interface allowing sales agents to efficiently manage customers and products in a unified platform",
+        "Implemented custom lightweight ORM solution for seamless data operations and relationship management",
+        "Developed robust order creation workflow with multi-step validation to ensure data integrity",
+        "Created PDF export functionality enabling professional document generation for client distribution and record-keeping"
       ]
     },
     {
       id: 2,
-      title: "Advanced Industrial Process Management Solutions",
-      description: "Designed and engineered cutting-edge software solutions using ASP.NET Core and WPF for industrial process orchestration and real-time data synchronization across manufacturing environments.",
-      technologies: ["C#", ".NET", "ASP.NET Core", "MSSQL", "WPF", "WebSocket", "SignalR"],
+      title: "Faster than Green - Reaction Speed Game",
+      description: "Created an engaging web-based reaction speed testing game that challenges users to click green buttons as quickly as possible, with Firebase integration for persistent score tracking and competitive leaderboards.",
+      technologies: ["HTML", "CSS", "JavaScript", "Firebase", "Web Game Development"],
       image: null,
       details: [
-        "Developed high-performance desktop applications using WPF for mission-critical industrial process control",
-        "Engineered scalable RESTful APIs facilitating seamless integration with enterprise business systems",
-        "Implemented fault-tolerant real-time communication infrastructure utilizing WebSocket and SignalR",
-        "Optimized database query performance for high-throughput industrial data processing environments"
+        "Designed responsive game interface with intuitive controls optimized for quick reaction inputs",
+        "Implemented precision timing mechanisms to accurately measure and evaluate user reaction speed",
+        "Developed scoring algorithm with progressive difficulty scaling for engaging gameplay experience",
+        "Integrated Firebase backend for real-time score tracking, leaderboards, and persistent user statistics"
       ]
     },
     {
       id: 3,
-      title: "Enterprise Attendance Management Platform",
-      description: "Architected and delivered a sophisticated web application for attendance tracking with comprehensive administrative controls and automated Excel report generation capabilities.",
-      technologies: ["ASP.NET Core", "C#", "MSSQL", "Figma"],
+      title: "Soldini - Personal Finance Management Application",
+      description: "Engineered an innovative personal finance MVP initially developed as a web application and later transformed into a cross-platform mobile solution using Capacitor, featuring an intuitive chat-like interface for expense and income tracking.",
+      technologies: ["React", "Capacitor", "Node.js", "SQLite", "Mobile Development"],
       image: null,
       details: [
-        "Collaborated with design team to create intuitive user interfaces through iterative Figma prototyping",
-        "Engineered robust backend architecture for efficient attendance data processing and storage",
-        "Developed comprehensive reporting engine with automated Excel export functionality",
-        "Implemented granular role-based access control system for secure administrative operations"
+        "Developed conversational UI with chat-like interaction paradigm for intuitive financial data entry",
+        "Implemented local SQLite database for secure offline storage of sensitive financial information",
+        "Created comprehensive expense and income categorization system with analytical reporting capabilities",
+        "Leveraged Capacitor framework to transform web application into fully-functional mobile experience"
       ]
     },
     {
       id: 4,
-      title: "Enterprise B2C E-commerce Platform - Technology Sector",
-      description: "Engineered checkout logic optimization and led platform maintenance initiatives for a global technology company's enterprise e-commerce solution.",
-      technologies: ["Java", "SAP Commerce Cloud (Hybris)"],
+      title: "Youtubino - Video Download Management System",
+      description: "Designed a sophisticated Electron-based graphical interface for yt-dlp that simplifies the video downloading process, complemented by a Telegram bot integration enabling remote download initiation and wireless file transfer capabilities.",
+      technologies: ["Electron", "Node.js", "yt-dlp", "Telegram Bot API", "Desktop Application"],
       image: null,
       details: [
-        "Redesigned checkout workflow resulting in significant conversion rate improvements",
-        "Executed platform maintenance and version upgrade strategies for SAP Commerce Cloud",
-        "Implemented innovative UX enhancements based on customer journey analytics",
-        "Collaborated with cross-functional international teams to orchestrate feature deployment"
-      ]
-    },
-    {
-      id: 5,
-      title: "Global B2C E-commerce Solution - Home Appliance Sector",
-      description: "Led the integration of next-generation payment methods (Apple Pay and PayPal) for a high-volume global e-commerce platform.",
-      technologies: ["Java", "SAP Commerce Cloud (Hybris)", "Adyen", "Braintree"],
-      image: null,
-      details: [
-        "Architected seamless integration between SAP Commerce Cloud and enterprise payment gateways including Adyen and Braintree",
-        "Implemented secure Apple Pay and PayPal API integrations to expand payment ecosystem",
-        "Engineered robust transaction validation and verification systems ensuring financial integrity",
-        "Conducted comprehensive security testing to ensure PCI DSS compliance across all payment channels"
-      ]
-    },
-    {
-      id: 6,
-      title: "3EM Corporate Website",
-      description: "Engineered a high-performance corporate website utilizing Preact and Tailwind CSS to deliver exceptional user experience with industry-leading performance metrics.",
-      technologies: ["Preact", "Tailwind CSS"],
-      image: null,
-      details: [
-        "Developed a highly responsive corporate web presence optimized for multi-device accessibility",
-        "Leveraged Preact's virtual DOM implementation to achieve exceptional performance benchmarks",
-        "Implemented sophisticated animation sequences to enhance user engagement metrics",
-        "Executed comprehensive SEO strategy resulting in significant improvement in search visibility"
+        "Engineered user-friendly desktop interface abstracting complex command-line operations into intuitive controls",
+        "Implemented Telegram bot integration enabling remote download initiation from mobile devices",
+        "Developed secure wireless file transfer protocol for seamless content distribution between devices",
+        "Created robust download queue management system with priority controls and status monitoring"
       ]
     }
-  ];
+];
 
   // Animation variants
   const containerVariants = {
@@ -179,7 +126,7 @@ const PersonalProjects = () => {
         className="text-6xl font-light text-primary mb-6 flex items-center gap-3"
         variants={itemVariants}
       >
-        Work Projects
+        Personal Projects
       </motion.h1>
       
       <div className="relative mb-8">
@@ -193,7 +140,7 @@ const PersonalProjects = () => {
 
           <div className="pl-0">
             <motion.p variants={itemVariants} className="text-xl font-light mb-8">
-              Professional projects I've worked on throughout my career. Each project required specific technical skills and contributed to my professional growth.
+              Some personal project I've worked on the free time. If you have some cool ideas, let me know!
             </motion.p>
 
             {/* Projects list */}
@@ -211,7 +158,7 @@ const PersonalProjects = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <div className="inline-block mb-2 px-2 py-1 bg-primary bg-opacity-10 text-white text-xs font-medium">
-                        Professional
+                        Personal
                       </div>
                       <h3 className="text-xl font-medium mb-2">{project.title}</h3>
                       <p className="text-gray-700 mb-4">{project.description}</p>
@@ -282,8 +229,6 @@ const PersonalProjects = () => {
         variants={itemVariants}
         className="pl-8 text-xs text-gray-500 italic mt-8"
       >
-        * For confidentiality reasons, some project details have been omitted or generalized.<br/>
-        ** Also have you seen how serious I look in this page? So professional!
       </motion.div>
     </motion.div>
   );
