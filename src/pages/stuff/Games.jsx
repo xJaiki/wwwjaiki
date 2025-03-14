@@ -95,7 +95,7 @@ const Games = () => {
       try {
         setLoading(true);
         // Fetch the CSV file
-        const response = await fetch('/src/pages/stuff/steam_games_analysis_20250311_150824.csv');
+        const response = await fetch('steam_games_analysis_20250311_150824.csv');
         const csvText = await response.text();
 
         // Parse the CSV data
@@ -310,7 +310,7 @@ const Games = () => {
             If you want to download the script you can do it
             <button
               className="mx-1 font-medium cursor-pointer underline decoration-dashed decoration-primary"
-              onClick={() => window.open('/src/pages/stuff/script.py')}
+              onClick={() => window.open('script.py')}
             >here</button>i don't assume any responsability for the use of this script, also because i didn't wrote it.
           </motion.p>
 
