@@ -11,7 +11,7 @@ const Layout = () => {
     }
     , []);
     return (
-        <div className="max-w-6xl px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-6xl px-4 md:px-6 lg:px-8 relative">
             <header className="pt-2 pb-6 md:pt-4 md:pb-6 fixed top-0 w-full z-50 bg-white">
                 {/* Navbar responsive */}
                 <div className="overflow-x-auto scrollbar-hide">
